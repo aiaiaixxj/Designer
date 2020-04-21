@@ -7,7 +7,7 @@
         <div class="server pull-left">
           <span class="glyphicon glyphicon-earphone"></span>888-888-8
           <span class="glyphicon glyphicon-envelope"></span>1013002914@qq.com 
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务呦！
         </div>
         <div class="shejiao pull-right">
           <span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
