@@ -2,11 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import { CountUp } from 'countup.js';
 
 /* 路由 */
 import router from './router'
-
-
 
 /* swiper */
 import 'swiper/dist/css/swiper.min.css';
@@ -34,6 +33,10 @@ Vue.component(Header.name,Header)
 import Footer from './components/Footer'
 Vue.component(Footer.name,Footer)
 
+/* countup组件 */
+import Countup from './components/Countup'
+Vue.component(Countup.name,Countup)
+
 /* 回到顶部 */
 import GoTop from './components/GoTop'
 Vue.component(GoTop.name,GoTop)
@@ -47,7 +50,10 @@ router.beforeEach((to, from, next) => {
     }
     next();
 });
-
+window.onload = function () {
+  var countUp = new CountUp('countup', 1000);
+  countUp.start();
+}
 
 new Vue({
   el: '#app',
